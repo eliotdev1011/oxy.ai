@@ -1,0 +1,50 @@
+import{J as k,K as z,N as p,M as h,U as w,j as f,V as v,W as C,T as A,b2 as E,a6 as j,D as N,E as x,F as y,aW as P,bF as H,ax as F,az as g,bG as G,ae as $}from"./index-Dg322SbI.js";import{b as B,g as L}from"./DialogContent-BJYmZZ_9.js";import{T as O}from"./Text-2nyYeLKn.js";import{S as q}from"./State-D_B647eN.js";import{M as Q}from"./MeshGeometry-BWbyOb_7.js";(function(){try{var e=typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{},t=new e.Error().stack;t&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[t]="881dff92-8a8c-4ae9-9a6f-0c794ec4ec7a",e._sentryDebugIdIdentifier="sentry-dbid-881dff92-8a8c-4ae9-9a6f-0c794ec4ec7a")}catch{}})();function Z(e){return z("MuiDialogActions",e)}k("MuiDialogActions",["root","spacing"]);const Y=e=>{const{classes:t,disableSpacing:s}=e;return C({root:["root",!s&&"spacing"]},Z,t)},J=p("div",{name:"MuiDialogActions",slot:"Root",overridesResolver:(e,t)=>{const{ownerState:s}=e;return[t.root,!s.disableSpacing&&t.spacing]}})({display:"flex",alignItems:"center",padding:8,justifyContent:"flex-end",flex:"0 0 auto",variants:[{props:({ownerState:e})=>!e.disableSpacing,style:{"& > :not(style) ~ :not(style)":{marginLeft:8}}}]}),ht=h.forwardRef(function(t,s){const o=w({props:t,name:"MuiDialogActions"}),{className:i,disableSpacing:d=!1,...a}=o,n={...o,disableSpacing:d},r=Y(n);return f.jsx(J,{className:v(r.root,i),ownerState:n,ref:s,...a})});function K(e){return z("MuiDialogContentText",e)}k("MuiDialogContentText",["root"]);const X=e=>{const{classes:t}=e,o=C({root:["root"]},K,t);return{...t,...o}},tt=p(A,{shouldForwardProp:e=>E(e)||e==="classes",name:"MuiDialogContentText",slot:"Root",overridesResolver:(e,t)=>t.root})({}),ut=h.forwardRef(function(t,s){const o=w({props:t,name:"MuiDialogContentText"}),{children:i,className:d,...a}=o,n=X(a);return f.jsx(tt,{component:"p",variant:"body1",color:"textSecondary",ref:s,ownerState:a,className:v(n.root,d),...o,classes:n})}),et=e=>{const{classes:t}=e;return C({root:["root"]},L,t)},st=p(A,{name:"MuiDialogTitle",slot:"Root",overridesResolver:(e,t)=>t.root})({padding:"16px 24px",flex:"0 0 auto"}),ft=h.forwardRef(function(t,s){const o=w({props:t,name:"MuiDialogTitle"}),{className:i,id:d,...a}=o,n=o,r=et(n),{titleId:l=d}=h.useContext(B);return f.jsx(st,{component:"h2",className:v(r.root,i),ownerState:n,ref:s,variant:"h6",id:d??l,...a})});function I(e,t,s,o,i,d,a,n){const r=a-s,l=n-o,c=i-s,u=d-o,_=e-s,T=t-o,M=r*r+l*l,m=r*c+l*u,b=r*_+l*T,U=c*c+u*u,R=c*_+u*T,D=1/(M*U-m*m),S=(U*b-m*R)*D,V=(M*R-m*b)*D;return S>=0&&V>=0&&S+V<1}class it extends j{constructor(...t){let s=t[0];s instanceof N&&(x(y,"Mesh: use new Mesh({ geometry, shader }) instead"),s={geometry:s,shader:t[1]},t[3]&&(x(y,"Mesh: drawMode argument has been removed, use geometry.topology instead"),s.geometry.topology=t[3]));const{geometry:o,shader:i,texture:d,roundPixels:a,state:n,...r}=s;super({label:"Mesh",...r}),this.renderPipeId="mesh",this._shader=null,this.allowChildren=!1,this.shader=i??null,this.texture=d??(i==null?void 0:i.texture)??P.WHITE,this.state=n??q.for2d(),this._geometry=o,this._geometry.on("update",this.onViewUpdate,this),this.roundPixels=a??!1}get material(){return x(y,"mesh.material property has been removed, use mesh.shader instead"),this._shader}set shader(t){this._shader!==t&&(this._shader=t,this.onViewUpdate())}get shader(){return this._shader}set geometry(t){var s;this._geometry!==t&&((s=this._geometry)==null||s.off("update",this.onViewUpdate,this),t.on("update",this.onViewUpdate,this),this._geometry=t,this.onViewUpdate())}get geometry(){return this._geometry}set texture(t){t||(t=P.EMPTY);const s=this._texture;s!==t&&(s&&s.dynamic&&s.off("update",this.onViewUpdate,this),t.dynamic&&t.on("update",this.onViewUpdate,this),this.shader&&(this.shader.texture=t),this._texture=t,this.onViewUpdate())}get texture(){return this._texture}get batched(){return this._shader||this.state.data&12?!1:this._geometry instanceof Q?this._geometry.batchMode==="auto"?this._geometry.positions.length/2<=100:this._geometry.batchMode==="batch":!1}get bounds(){return this._geometry.bounds}addBounds(t){t.addBounds(this.geometry.bounds)}containsPoint(t){const{x:s,y:o}=t;if(!this.bounds.containsPoint(s,o))return!1;const i=this.geometry.getBuffer("aPosition").data,d=this.geometry.topology==="triangle-strip"?3:1;if(this.geometry.getIndex()){const a=this.geometry.getIndex().data,n=a.length;for(let r=0;r+2<n;r+=d){const l=a[r]*2,c=a[r+1]*2,u=a[r+2]*2;if(I(s,o,i[l],i[l+1],i[c],i[c+1],i[u],i[u+1]))return!0}}else{const a=i.length/2;for(let n=0;n+2<a;n+=d){const r=n*2,l=(n+1)*2,c=(n+2)*2;if(I(s,o,i[r],i[r+1],i[l],i[l+1],i[c],i[c+1]))return!0}}return!1}onViewUpdate(){if(this._didViewChangeTick++,this.didViewUpdate)return;this.didViewUpdate=!0;const t=this.renderGroup||this.parentRenderGroup;t&&t.onChildViewUpdate(this)}destroy(t){var o;if(super.destroy(t),typeof t=="boolean"?t:t==null?void 0:t.texture){const i=typeof t=="boolean"?t:t==null?void 0:t.textureSource;this._texture.destroy(i)}(o=this._geometry)==null||o.off("update",this.onViewUpdate,this),this._texture=null,this._geometry=null,this._shader=null}}const mt="/asset/gif/opmlavatar-DbUBYvr0.gif",gt="/asset/png/defultopml-CTZVVTds.png",ot=e=>h.createElement("svg",{stroke:"currentColor",fill:"currentColor",strokeWidth:0,viewBox:"0 0 24 24",height:"1em",width:"1em",xmlns:"http://www.w3.org/2000/svg",...e},h.createElement("path",{d:"M12 19C12.8284 19 13.5 19.6716 13.5 20.5C13.5 21.3284 12.8284 22 12 22C11.1716 22 10.5 21.3284 10.5 20.5C10.5 19.6716 11.1716 19 12 19ZM12 2C15.3137 2 18 4.68629 18 8C18 10.1646 17.2474 11.2907 15.3259 12.9231C13.3986 14.5604 13 15.2969 13 17H11C11 14.526 11.787 13.3052 14.031 11.3989C15.5479 10.1102 16 9.43374 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8V9H6V8C6 4.68629 8.68629 2 12 2Z",className:"riQuestionMark"})),pt=p(ot)`
+  height: ${e=>e.height};
+  width: ${e=>e.width};
+  font-size: ${e=>e.fontSize};
+  color: ${e=>e.color};
+
+  .riQuestionMarkIcon {
+    fill: ${e=>e.fill};
+
+    &:hover {
+      fill: ${e=>e.hover??e.fill};
+    }
+  }
+`;let W={vertShader:`
+    in vec2 aPosition;
+    in vec2 aUV;
+    out vec2 vUV;
+    uniform mat3 uProjectionMatrix;
+    uniform mat3 uWorldTransformMatrix;
+    uniform mat3 uTransformMatrix;
+    void main() {
+        mat3 mvp = uProjectionMatrix * uWorldTransformMatrix * uTransformMatrix;
+        gl_Position = vec4((mvp * vec3(aPosition, 1.0)).xy, 0.0, 1.0);
+        vUV = aUV;
+  }
+    `,fragmentShader:`
+        in vec2 vUV;
+
+        uniform float radius;
+        uniform float _x;
+        uniform float _y;
+        uniform float dot;
+        uniform float uTime;
+        uniform vec2 iResolution;
+        void main(void)
+        {
+           vec2 p = vUV*2.0-1.5;
+            vec3 COLOR=vec3(0.1,1.0,1.0);
+            float f = 0.0;
+            for(float i = 1.0; i <= 8.0; i++)
+            {
+                float s = sin(_x * uTime + (i * 0.5) * uTime) * radius;
+                float c = cos(_y * uTime + (i * 0.5) * uTime) * radius ;
+                f += 0.001 / abs(length(p*0.5+vec2(s,c)));
+            }
+
+            gl_FragColor = vec4(COLOR*f, 1.0);
+
+        }
+    `};class nt{constructor(t,s,o,i){this.settings={width:600,height:600},this.startHandler=i,this.modelName=s.modelName,this.hooks=o,this.props=s,this.ratio=window.devicePixelRatio,this.canvas=t,this.init()}async init(){const t=await H({backgroundColor:0,width:this.settings.width,height:this.settings.height,antialias:!0,canvas:this.canvas,resolution:window.devicePixelRatio,transparent:!0,backgroundAlpha:0});this.pixiStage=new F,this.pixi_renderer=t,this.preload()}preload(){this.start()}start(){this.createShader(),this.createText(),window.addEventListener("resize",this.onWindowResize.bind(this),!1),window.requestAnimationFrame(this._animate.bind(this)),this._resize()}createText(){const t=new O({text:"Generating",style:{fontFamily:"SpaceMono",fontSize:30,fill:65535,align:"center"}});t.anchor.set(.5),t.x=this.settings.width/2,t.y=this.settings.height/2+15,t.alpha=0,this.pixiStage.addChild(t),g.TweenMax.to(t,1,{delay:1,alpha:.7,y:this.settings.height/2+0,onComplete:()=>{g.TweenMax.to(t,1,{alpha:0,y:this.settings.height/2-0,yoyo:!0,repeat:-1,ease:Cubic.easeInOut})}})}createShader(){let t=this.settings.width*1,s=this.settings.height*1;const o=new N({attributes:{aPosition:[-t,-s,t,-s,t,s,-t,s],aUV:[0,0,1,0,1,1,0,1]},indexBuffer:[0,1,2,0,2,3]}),i=G.from({gl:{fragment:W.fragmentShader,vertex:W.vertShader},resources:{timeUniforms:{uTime:{value:0,type:"f32"},iResolution:{value:[.5,.5],type:"vec2<f32>"},_x:{value:.7,type:"f32"},_y:{value:.5,type:"f32"},radius:{value:.01,type:"f32"},dot:{value:1,type:"f32"}}}}),d=new it({geometry:o,shader:i});d.position.set(0,0),this.pixiStage.addChild(d),i.resources.timeUniforms.uniforms.uTime=0,g.TweenMax.to(i.resources.timeUniforms.uniforms,70,{uTime:80,repeat:-1,ease:Linear.easeNone}),g.TweenMax.to(i.resources.timeUniforms.uniforms,1,{radius:.1,ease:Cubic.easeInOut})}onWindowResize(){setTimeout(()=>{this._resize()},200)}_resize(){this.parentW=this.canvas.parentNode.offsetWidth,this.parentH=this.canvas.parentNode.offsetHeight,this.pixi_renderer&&(this.pixi_renderer.resize(this.parentW,this.parentH),this.canvas.style.height=this.parentH+"px",this.canvas.style.width=this.parentW+"px",this.pixiStage.scale.x=this.parentW/this.settings.width,this.pixiStage.scale.y=this.parentH/this.settings.height)}pixiStart(){}_animate(){this.canvas&&this.pixi_renderer.render(this.pixiStage),this.animationId=window.requestAnimationFrame(this._animate.bind(this))}dispose(){window.removeEventListener("resize",this.onWindowResize.bind(this),!1),cancelAnimationFrame(this.animationId)}}const xt=e=>{const t=h.useRef(null),s=h.useRef(null),o=h.useRef(null),i=()=>{},[d,a]=h.useState(0),n={setCount:a};let r=!1;return h.useEffect(()=>{const l=o.current;if(!r){r=!0;const c=new nt(l,e,n,i);s.current=c}return()=>{s.current.dispose()}},[]),f.jsx($,{ref:t,style:e.style,sx:e.sx,children:f.jsx("canvas",{ref:o,style:{touchAction:"auto !important",backgroundColor:"transparent"}})})};export{ft as D,xt as M,pt as R,ut as a,ht as b,gt as d,mt as o};
