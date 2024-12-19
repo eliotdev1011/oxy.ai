@@ -1418,7 +1418,7 @@ const Nt = (e) => {
         {
           firstLine: "DEVELOPER",
           secondLine: "DOCUMENTATION ",
-          href: "https://ifrices-organization.gitbook.io/oxy-ai/",
+          href: "https://docs.oxyaiprotocol.org/",
         },
         {
           firstLine: "JOIN OUR",
@@ -1776,7 +1776,7 @@ const Nt = (e) => {
                     sx: { ml: { xs: 0, sm: 4 } },
                     children: t.jsx(C, {
                       component: "a",
-                      href: "https://ifrices-organization.gitbook.io/oxy-ai/",
+                      href: "https://docs.oxyaiprotocol.org/",
                       target: "_blank",
                       rel: "noopener noreferrer",
                       color: "inherit",
@@ -2333,7 +2333,7 @@ const Nt = (e) => {
           title: "Docs",
           desc: "Read our developer documentation",
           img: $t,
-          link: "https://ifrices-organization.gitbook.io/oxy-ai//",
+          link: "https://docs.oxyaiprotocol.org//",
           direction: "right",
         },
       ],
@@ -2345,7 +2345,7 @@ const Nt = (e) => {
         },
         {
           title: "DOCUMENTATION",
-          href: "https://ifrices-organization.gitbook.io/oxy-ai/",
+          href: "https://docs.oxyaiprotocol.org/",
           target: "_blank",
         },
       ],

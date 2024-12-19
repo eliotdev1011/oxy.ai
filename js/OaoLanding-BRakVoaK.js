@@ -1231,7 +1231,7 @@ const e1 = (V) => {
               sx: { display: { xs: "flex", sm: "flex" } },
               children: C.jsxs(b, {
                 component: "a",
-                href: "https://ifrices-organization.gitbook.io/oxy-ai/",
+                href: "https://docs.oxyaiprotocol.org/",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 underline: "none",

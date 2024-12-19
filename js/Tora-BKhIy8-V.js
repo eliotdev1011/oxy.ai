@@ -45,12 +45,12 @@ const x =
     {
       icon: x,
       title: "Guide for the desktop app",
-      link: "https://ifrices-organization.gitbook.io/oxy-ai/",
+      link: "https://docs.oxyaiprotocol.org/",
     },
     {
       icon: x,
       title: "Guide for the CLI",
-      link: "https://ifrices-organization.gitbook.io/oxy-ai/s",
+      link: "https://docs.oxyaiprotocol.org/s",
     },
   ],
   c = ({ img: n, title: o, desc: s, link: l }) =>
