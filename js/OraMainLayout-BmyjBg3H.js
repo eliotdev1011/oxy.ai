@@ -2459,7 +2459,7 @@ const Nt = (e) => {
                       component: S,
                       to: { pathname: "/" },
                       children: t.jsx("img", {
-                        alt: "ora logo",
+                        alt: "oxy logo",
                         src: "../asset/logo.png",
                         style: {
                           width: e.EXTRA_SMALL ? "7rem" : "6rem",
