@@ -2530,7 +2530,7 @@ const Nt = (e) => {
                               ":hover": { backgroundColor: "#00FBFFee" },
                             },
                             children: t.jsx(C, {
-                              href: "https://t.me/oxy_ai_channel",
+                              href: "https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x00000000000000000000000000000000000000(buy)",
                               target: "_blank",
                               rel: "noopener noreferrer",
                               underline: "none",
@@ -2543,7 +2543,7 @@ const Nt = (e) => {
                                   whiteSpace: "nowrap",
                                   lineHeight: "2rem",
                                 },
-                                children: "JOIN COMMUNITY",
+                                children: "BUY $OXY",
                               }),
                             }),
                           })
