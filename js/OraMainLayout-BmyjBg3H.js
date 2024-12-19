@@ -1,49 +1,4 @@
-import {
-  K as Be,
-  J as P,
-  N as Le,
-  O as V,
-  P as Me,
-  S as Xe,
-  M as n,
-  U as ee,
-  j as t,
-  V as q,
-  W as Ie,
-  bv as Re,
-  b2 as Je,
-  Q as _,
-  bu as qe,
-  bF as Ke,
-  ax as I,
-  aA as le,
-  aB as J,
-  ay as R,
-  aW as $e,
-  az as y,
-  co as et,
-  cp as tt,
-  cq as rt,
-  cr as it,
-  cs as st,
-  ct as ot,
-  t as B,
-  ae as W,
-  L as C,
-  e as S,
-  X as G,
-  G as o,
-  T as u,
-  R as k,
-  a1 as te,
-  a4 as K,
-  Z as nt,
-  ar as at,
-  cu as lt,
-  cg as ct,
-  cv as ce,
-  cw as dt,
-} from "./index-Dg322SbI.js";
+import { K as Be, J as P, N as Le, O as V, P as Me, S as Xe, M as n, U as ee, j as t, V as q, W as Ie, bv as Re, b2 as Je, Q as _, bu as qe, bF as Ke, ax as I, aA as le, aB as J, ay as R, aW as $e, az as y, co as et, cp as tt, cq as rt, cr as it, cs as st, ct as ot, t as B, ae as W, L as C, e as S, X as G, G as o, T as u, R as k, a1 as te, a4 as K, Z as nt, ar as at, cu as lt, cg as ct, cv as ce, cw as dt } from "./index-Dg322SbI.js";
 import { G as N } from "./index-BBZuYqjW.js";
 import { l as de, S as ht } from "./TwitterIcon-DkqgGF_e.js";
 import { c as Z } from "./createSvgIcon-C1_jFWCT.js";
@@ -58,42 +13,15 @@ import { I as bt } from "./IconButton-DEybFO94.js";
 import { L as he, M as St } from "./Menu-uPt8HNXf.js";
 (function () {
   try {
-    var e =
-        typeof window < "u"
-          ? window
-          : typeof global < "u"
-          ? global
-          : typeof self < "u"
-          ? self
-          : {},
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {},
       r = new e.Error().stack;
-    r &&
-      ((e._sentryDebugIds = e._sentryDebugIds || {}),
-      (e._sentryDebugIds[r] = "04c208a0-6b15-4056-ae5b-006f3ac6f9ae"),
-      (e._sentryDebugIdIdentifier =
-        "sentry-dbid-04c208a0-6b15-4056-ae5b-006f3ac6f9ae"));
+    r && ((e._sentryDebugIds = e._sentryDebugIds || {}), (e._sentryDebugIds[r] = "04c208a0-6b15-4056-ae5b-006f3ac6f9ae"), (e._sentryDebugIdIdentifier = "sentry-dbid-04c208a0-6b15-4056-ae5b-006f3ac6f9ae"));
   } catch {}
 })();
 function kt(e) {
   return Be("MuiAppBar", e);
 }
-P("MuiAppBar", [
-  "root",
-  "positionFixed",
-  "positionAbsolute",
-  "positionSticky",
-  "positionStatic",
-  "positionRelative",
-  "colorDefault",
-  "colorPrimary",
-  "colorSecondary",
-  "colorInherit",
-  "colorTransparent",
-  "colorError",
-  "colorInfo",
-  "colorSuccess",
-  "colorWarning",
-]);
+P("MuiAppBar", ["root", "positionFixed", "positionAbsolute", "positionSticky", "positionStatic", "positionRelative", "colorDefault", "colorPrimary", "colorSecondary", "colorInherit", "colorTransparent", "colorError", "colorInfo", "colorSuccess", "colorWarning"]);
 const At = (e) => {
     const { color: r, position: i, classes: s } = e,
       l = { root: ["root", `color${V(r)}`, `position${V(i)}`] };
@@ -152,19 +80,11 @@ const At = (e) => {
         {
           props: { color: "default" },
           style: {
-            "--AppBar-background": e.vars
-              ? e.vars.palette.AppBar.defaultBg
-              : e.palette.grey[100],
-            "--AppBar-color": e.vars
-              ? e.vars.palette.text.primary
-              : e.palette.getContrastText(e.palette.grey[100]),
+            "--AppBar-background": e.vars ? e.vars.palette.AppBar.defaultBg : e.palette.grey[100],
+            "--AppBar-color": e.vars ? e.vars.palette.text.primary : e.palette.getContrastText(e.palette.grey[100]),
             ...e.applyStyles("dark", {
-              "--AppBar-background": e.vars
-                ? e.vars.palette.AppBar.defaultBg
-                : e.palette.grey[900],
-              "--AppBar-color": e.vars
-                ? e.vars.palette.text.primary
-                : e.palette.getContrastText(e.palette.grey[900]),
+              "--AppBar-background": e.vars ? e.vars.palette.AppBar.defaultBg : e.palette.grey[900],
+              "--AppBar-color": e.vars ? e.vars.palette.text.primary : e.palette.getContrastText(e.palette.grey[900]),
             }),
           },
         },
@@ -178,28 +98,20 @@ const At = (e) => {
             },
           })),
         {
-          props: (r) =>
-            r.enableColorOnDark === !0 &&
-            !["inherit", "transparent"].includes(r.color),
+          props: (r) => r.enableColorOnDark === !0 && !["inherit", "transparent"].includes(r.color),
           style: {
             backgroundColor: "var(--AppBar-background)",
             color: "var(--AppBar-color)",
           },
         },
         {
-          props: (r) =>
-            r.enableColorOnDark === !1 &&
-            !["inherit", "transparent"].includes(r.color),
+          props: (r) => r.enableColorOnDark === !1 && !["inherit", "transparent"].includes(r.color),
           style: {
             backgroundColor: "var(--AppBar-background)",
             color: "var(--AppBar-color)",
             ...e.applyStyles("dark", {
-              backgroundColor: e.vars
-                ? pe(e.vars.palette.AppBar.darkBg, "var(--AppBar-background)")
-                : null,
-              color: e.vars
-                ? pe(e.vars.palette.AppBar.darkColor, "var(--AppBar-color)")
-                : null,
+              backgroundColor: e.vars ? pe(e.vars.palette.AppBar.darkBg, "var(--AppBar-background)") : null,
+              color: e.vars ? pe(e.vars.palette.AppBar.darkColor, "var(--AppBar-color)") : null,
             }),
           },
         },
@@ -218,13 +130,7 @@ const At = (e) => {
   ),
   Et = n.forwardRef(function (r, i) {
     const s = ee({ props: r, name: "MuiAppBar" }),
-      {
-        className: l,
-        color: d = "primary",
-        enableColorOnDark: h = !1,
-        position: g = "fixed",
-        ...a
-      } = s,
+      { className: l, color: d = "primary", enableColorOnDark: h = !1, position: g = "fixed", ...a } = s,
       f = { ...s, color: d, position: g, enableColorOnDark: h },
       p = At(f);
     return t.jsx(jt, {
@@ -283,10 +189,7 @@ const At = (e) => {
       },
       ...i,
     };
-    const l =
-      (h = (d = e.components) == null ? void 0 : d.MuiCssBaseline) == null
-        ? void 0
-        : h.styleOverrides;
+    const l = (h = (d = e.components) == null ? void 0 : d.MuiCssBaseline) == null ? void 0 : h.styleOverrides;
     return l && (s = [s, l]), s;
   },
   D = "mui-ecs",
@@ -294,9 +197,7 @@ const At = (e) => {
     const r = ze(e, !1),
       i = Array.isArray(r) ? r[0] : r;
     return (
-      !e.vars &&
-        i &&
-        (i.html[`:root:has(${D})`] = { colorScheme: e.palette.mode }),
+      !e.vars && i && (i.html[`:root:has(${D})`] = { colorScheme: e.palette.mode }),
       e.colorSchemes &&
         Object.entries(e.colorSchemes).forEach(([s, l]) => {
           var h, g;
@@ -316,79 +217,29 @@ const At = (e) => {
       r
     );
   },
-  It = Re(
-    $
-      ? ({ theme: e, enableColorScheme: r }) => ze(e, r)
-      : ({ theme: e }) => Mt(e)
-  );
+  It = Re($ ? ({ theme: e, enableColorScheme: r }) => ze(e, r) : ({ theme: e }) => Mt(e));
 function Rt(e) {
   const r = ee({ props: e, name: "MuiCssBaseline" }),
     { children: i, enableColorScheme: s = !1 } = r;
   return t.jsxs(n.Fragment, {
-    children: [
-      $ && t.jsx(It, { enableColorScheme: s }),
-      !$ && !s && t.jsx("span", { className: D, style: { display: "none" } }),
-      i,
-    ],
+    children: [$ && t.jsx(It, { enableColorScheme: s }), !$ && !s && t.jsx("span", { className: D, style: { display: "none" } }), i],
   });
 }
-const ge = P("MuiDivider", [
-    "root",
-    "absolute",
-    "fullWidth",
-    "inset",
-    "middle",
-    "flexItem",
-    "light",
-    "vertical",
-    "withChildren",
-    "withChildrenVertical",
-    "textAlignRight",
-    "textAlignLeft",
-    "wrapper",
-    "wrapperVertical",
-  ]),
+const ge = P("MuiDivider", ["root", "absolute", "fullWidth", "inset", "middle", "flexItem", "light", "vertical", "withChildren", "withChildrenVertical", "textAlignRight", "textAlignLeft", "wrapper", "wrapperVertical"]),
   ue = P("MuiListItemIcon", ["root", "alignItemsFlexStart"]);
 function zt(e) {
   return Be("MuiMenuItem", e);
 }
-const z = P("MuiMenuItem", [
-    "root",
-    "focusVisible",
-    "dense",
-    "disabled",
-    "divider",
-    "gutters",
-    "selected",
-  ]),
+const z = P("MuiMenuItem", ["root", "focusVisible", "dense", "disabled", "divider", "gutters", "selected"]),
   Ft = (e, r) => {
     const { ownerState: i } = e;
-    return [
-      r.root,
-      i.dense && r.dense,
-      i.divider && r.divider,
-      !i.disableGutters && r.gutters,
-    ];
+    return [r.root, i.dense && r.dense, i.divider && r.divider, !i.disableGutters && r.gutters];
   },
   Tt = (e) => {
-    const {
-        disabled: r,
-        dense: i,
-        divider: s,
-        disableGutters: l,
-        selected: d,
-        classes: h,
-      } = e,
+    const { disabled: r, dense: i, divider: s, disableGutters: l, selected: d, classes: h } = e,
       a = Ie(
         {
-          root: [
-            "root",
-            i && "dense",
-            r && "disabled",
-            !l && "gutters",
-            s && "divider",
-            d && "selected",
-          ],
+          root: ["root", i && "dense", r && "disabled", !l && "gutters", s && "divider", d && "selected"],
         },
         zt,
         h
@@ -419,29 +270,15 @@ const z = P("MuiMenuItem", [
         "@media (hover: none)": { backgroundColor: "transparent" },
       },
       [`&.${z.selected}`]: {
-        backgroundColor: e.vars
-          ? `rgba(${e.vars.palette.primary.mainChannel} / ${e.vars.palette.action.selectedOpacity})`
-          : _(e.palette.primary.main, e.palette.action.selectedOpacity),
+        backgroundColor: e.vars ? `rgba(${e.vars.palette.primary.mainChannel} / ${e.vars.palette.action.selectedOpacity})` : _(e.palette.primary.main, e.palette.action.selectedOpacity),
         [`&.${z.focusVisible}`]: {
-          backgroundColor: e.vars
-            ? `rgba(${e.vars.palette.primary.mainChannel} / calc(${e.vars.palette.action.selectedOpacity} + ${e.vars.palette.action.focusOpacity}))`
-            : _(
-                e.palette.primary.main,
-                e.palette.action.selectedOpacity + e.palette.action.focusOpacity
-              ),
+          backgroundColor: e.vars ? `rgba(${e.vars.palette.primary.mainChannel} / calc(${e.vars.palette.action.selectedOpacity} + ${e.vars.palette.action.focusOpacity}))` : _(e.palette.primary.main, e.palette.action.selectedOpacity + e.palette.action.focusOpacity),
         },
       },
       [`&.${z.selected}:hover`]: {
-        backgroundColor: e.vars
-          ? `rgba(${e.vars.palette.primary.mainChannel} / calc(${e.vars.palette.action.selectedOpacity} + ${e.vars.palette.action.hoverOpacity}))`
-          : _(
-              e.palette.primary.main,
-              e.palette.action.selectedOpacity + e.palette.action.hoverOpacity
-            ),
+        backgroundColor: e.vars ? `rgba(${e.vars.palette.primary.mainChannel} / calc(${e.vars.palette.action.selectedOpacity} + ${e.vars.palette.action.hoverOpacity}))` : _(e.palette.primary.main, e.palette.action.selectedOpacity + e.palette.action.hoverOpacity),
         "@media (hover: none)": {
-          backgroundColor: e.vars
-            ? `rgba(${e.vars.palette.primary.mainChannel} / ${e.vars.palette.action.selectedOpacity})`
-            : _(e.palette.primary.main, e.palette.action.selectedOpacity),
+          backgroundColor: e.vars ? `rgba(${e.vars.palette.primary.mainChannel} / ${e.vars.palette.action.selectedOpacity})` : _(e.palette.primary.main, e.palette.action.selectedOpacity),
         },
       },
       [`&.${z.focusVisible}`]: {
@@ -489,23 +326,9 @@ const z = P("MuiMenuItem", [
   ),
   Ot = n.forwardRef(function (r, i) {
     const s = ee({ props: r, name: "MuiMenuItem" }),
-      {
-        autoFocus: l = !1,
-        component: d = "li",
-        dense: h = !1,
-        divider: g = !1,
-        disableGutters: a = !1,
-        focusVisibleClassName: f,
-        role: p = "menuitem",
-        tabIndex: m,
-        className: w,
-        ...Q
-      } = s,
+      { autoFocus: l = !1, component: d = "li", dense: h = !1, divider: g = !1, disableGutters: a = !1, focusVisibleClassName: f, role: p = "menuitem", tabIndex: m, className: w, ...Q } = s,
       A = n.useContext(he),
-      L = n.useMemo(
-        () => ({ dense: h || A.dense || !1, disableGutters: a }),
-        [A.dense, h, a]
-      ),
+      L = n.useMemo(() => ({ dense: h || A.dense || !1, disableGutters: a }), [A.dense, h, a]),
       b = n.useRef(null);
     qe(() => {
       l && b.current && b.current.focus();
@@ -546,33 +369,13 @@ const z = P("MuiMenuItem", [
   Se =
     "data:image/svg+xml,%3csvg%20width='190'%20height='45'%20viewBox='5%200%20190%2045'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M55.9114%2036.5715H50.8701V12.0383H55.9114V36.5715Z'%20fill='%23121212'/%3e%3cpath%20d='M74.1284%2011.5567C76.9112%2011.5567%2079.1849%2012.5327%2080.9465%2014.4843C82.7057%2016.4361%2083.5877%2018.9175%2083.5877%2021.9261V36.569H78.5461V22.6942C78.5461%2020.8059%2077.938%2019.2444%2076.7213%2018.0128C75.5045%2016.7808%2074.0016%2016.1649%2072.2095%2016.1649C70.192%2016.1649%2068.5444%2016.7808%2067.2644%2018.0128C65.9845%2019.2444%2065.3431%2020.8059%2065.3431%2022.6942V36.569H60.3018V12.0383H65.3431V18.3752C66.0147%2016.2636%2067.1274%2014.5985%2068.6813%2013.3818C70.2325%2012.165%2072.0498%2011.5567%2074.1308%2011.5567H74.1284Z'%20fill='%23121212'/%3e%3cpath%20d='M99.3058%2011.5567C103.242%2011.5567%20106.443%2012.9661%20108.907%2015.782C111.371%2018.6006%20112.38%2022.0073%20111.931%2026.0094H91.6233C91.9758%2027.9942%2092.888%2029.6036%2094.3607%2030.8356C95.8334%2032.0673%2097.6077%2032.6834%2099.6888%2032.6834C101.288%2032.6834%20102.72%2032.2905%20103.985%2031.5072C105.25%2030.7241%20106.233%2029.6593%20106.938%2028.3137L111.163%2030.1867C110.076%2032.2678%20108.522%2033.9304%20106.507%2035.1801C104.492%2036.4295%20102.17%2037.0532%2099.5443%2037.0532C95.8639%2037.0532%2092.7741%2035.8364%2090.2774%2033.4057C87.7807%2030.9751%2086.5312%2027.9485%2086.5312%2024.3315C86.5312%2020.7146%2087.7555%2017.683%2090.2039%2015.2321C92.6523%2012.7837%2095.6839%2011.5595%2099.3033%2011.5595L99.3058%2011.5567ZM99.3058%2015.9267C97.448%2015.9267%2095.8411%2016.4943%2094.4799%2017.6323C93.1187%2018.7681%2092.214%2020.2482%2091.7678%2022.073H106.844C106.428%2020.2482%20105.539%2018.7681%20104.18%2017.6323C102.819%2016.4968%20101.194%2015.9267%2099.3058%2015.9267Z'%20fill='%23121212'/%3e%3cpath%20d='M125.87%2011.5567C128.816%2011.5567%20131.216%2012.3248%20133.071%2013.8609C134.927%2015.3968%20135.857%2017.6071%20135.857%2020.4864V36.5715H130.815V30.0423C129.31%2034.7162%20126.286%2037.0532%20121.741%2037.0532C119.627%2037.0532%20117.868%2036.4221%20116.459%2035.1571C115.05%2033.8924%20114.348%2032.2373%20114.348%2030.1892C114.348%2027.7887%20115.194%2025.9867%20116.892%2024.7877C118.588%2023.589%20120.75%2022.8436%20123.374%2022.5547L128.126%2022.073C129.918%2021.9136%20130.815%2021.1125%20130.815%2019.6729C130.815%2018.4891%20130.359%2017.5436%20129.447%2016.8415C128.534%2016.1369%20127.343%2015.7848%20125.87%2015.7848C124.398%2015.7848%20123.092%2016.1699%20122.053%2016.938C121.014%2017.7058%20120.35%2018.8263%20120.061%2020.299L115.067%2019.0975C115.516%2016.7935%20116.715%2014.9609%20118.669%2013.5997C120.621%2012.2413%20123.021%2011.5595%20125.87%2011.5595V11.5567ZM123.374%2032.9699C125.455%2032.9699%20127.213%2032.2728%20128.653%2030.881C130.093%2029.4896%20130.813%2027.865%20130.813%2026.0069V24.6638C130.43%2025.3048%20129.5%2025.7027%20128.027%2025.8624L123.371%2026.4378C122.154%2026.6%20121.186%2026.9574%20120.466%2027.5176C119.746%2028.0777%20119.386%2028.8383%20119.386%2029.7988C119.386%2030.7596%20119.746%2031.5274%20120.466%2032.1028C121.186%2032.6781%20122.154%2032.9671%20123.371%2032.9671L123.374%2032.9699Z'%20fill='%23121212'/%3e%3cpath%20d='M47.3994%2036.5715H24.1133V12.0383H29.4411V31.8191H47.3994V36.5715Z'%20fill='%23121212'/%3e%3cpath%20d='M140.609%2011.5567C143.234%2011.5567%20145.362%209.42894%20145.362%206.80431C145.362%204.17957%20143.234%202.05179%20140.609%202.05179C137.984%202.05179%20135.856%204.17957%20135.856%206.80431C135.856%209.42894%20137.984%2011.5567%20140.609%2011.5567Z'%20fill='%23121212'/%3e%3c/svg%3e",
   ke = "/asset/svg/logo_mantle-D9go02WK.svg",
-  _t =
-    "data:image/svg+xml,%3csvg%20width='49'%20height='48'%20viewBox='0%200%2049%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_4707_3623)'%3e%3cpath%20d='M24.0356%2047.5823C37.1979%2047.5823%2047.8682%2036.9306%2047.8682%2023.7911C47.8682%2010.6516%2037.1979%200%2024.0356%200C11.5479%200%201.30338%209.58763%200.28595%2021.7913H31.7872V25.791H0.28595C1.30338%2037.9946%2011.5479%2047.5823%2024.0356%2047.5823Z'%20fill='%230A0B0D'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_4707_3623'%3e%3crect%20width='48'%20height='48'%20fill='white'%20transform='translate(0.28595)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e",
-  Wt =
-    "data:image/svg+xml,%3csvg%20width='49'%20height='48'%20viewBox='0%200%2049%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.2703%2018.8802L15.9528%2016.96L5.99994%2022.7202V34.2398L15.9528%2040L25.9062%2034.2398V16.3198L31.4352%2013.12L36.9651%2016.3198V22.7202L31.4352%2025.92L28.1178%2024.0004V29.1198L31.4352%2031.04L41.3882%2025.2798V13.7602L31.4352%208L21.4825%2013.7602V31.6802L15.9528%2034.88L10.4236%2031.6802V25.2798L15.9528%2022.08L19.2703%2023.9996V18.8802Z'%20fill='black'/%3e%3c/svg%3e",
+  _t = "data:image/svg+xml,%3csvg%20width='49'%20height='48'%20viewBox='0%200%2049%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_4707_3623)'%3e%3cpath%20d='M24.0356%2047.5823C37.1979%2047.5823%2047.8682%2036.9306%2047.8682%2023.7911C47.8682%2010.6516%2037.1979%200%2024.0356%200C11.5479%200%201.30338%209.58763%200.28595%2021.7913H31.7872V25.791H0.28595C1.30338%2037.9946%2011.5479%2047.5823%2024.0356%2047.5823Z'%20fill='%230A0B0D'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_4707_3623'%3e%3crect%20width='48'%20height='48'%20fill='white'%20transform='translate(0.28595)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e",
+  Wt = "data:image/svg+xml,%3csvg%20width='49'%20height='48'%20viewBox='0%200%2049%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M19.2703%2018.8802L15.9528%2016.96L5.99994%2022.7202V34.2398L15.9528%2040L25.9062%2034.2398V16.3198L31.4352%2013.12L36.9651%2016.3198V22.7202L31.4352%2025.92L28.1178%2024.0004V29.1198L31.4352%2031.04L41.3882%2025.2798V13.7602L31.4352%208L21.4825%2013.7602V31.6802L15.9528%2034.88L10.4236%2031.6802V25.2798L15.9528%2022.08L19.2703%2023.9996V18.8802Z'%20fill='black'/%3e%3c/svg%3e",
   Fe = "/asset/png/circle_footer-UnM6YKMZ.png",
   Dt = "/asset/svg/Arbitrum_hoverout-jrC7ipLy.svg";
 class Vt {
   constructor(r, i, s, l, d) {
-    (this.elapsed = Date.now()),
-      (this.inView = !1),
-      (this.wall_spw = 250 * 0.8),
-      (this.wall_sph = 80),
-      (this.wall_gap = 400 * 0.8),
-      (this.wall_startY = 70),
-      (this.wall_columnGap = 80),
-      (this.arr_logos = []),
-      (this.arr_logosFix = []),
-      (this.maxWidth = 1920),
-      (this.settings = { width: 1920, height: 120 }),
-      (this.startHandler = d),
-      (this.modelName = i.modelName),
-      (this.hooks = s),
-      (this.props = i),
-      (this.location = l),
-      (this.ratio = Math.min(window.devicePixelRatio, 2)),
-      (this.canvas = r),
-      this.init();
+    (this.elapsed = Date.now()), (this.inView = !1), (this.wall_spw = 250 * 0.8), (this.wall_sph = 80), (this.wall_gap = 400 * 0.8), (this.wall_startY = 70), (this.wall_columnGap = 80), (this.arr_logos = []), (this.arr_logosFix = []), (this.maxWidth = 1920), (this.settings = { width: 1920, height: 120 }), (this.startHandler = d), (this.modelName = i.modelName), (this.hooks = s), (this.props = i), (this.location = l), (this.ratio = Math.min(window.devicePixelRatio, 2)), (this.canvas = r), this.init();
   }
   async init() {
     const r = await Ke({
@@ -585,42 +388,12 @@ class Vt {
       transparent: !0,
       backgroundAlpha: 0,
     });
-    (this.pixiStage = new I()),
-      (this.pixi_renderer = r),
-      (this.rectTest = new le().rect(
-        0,
-        0,
-        this.settings.width,
-        this.settings.height
-      )),
-      this.rectTest.fill(0),
-      (this.rectTest.alpha = 0),
-      this.pixiStage.addChild(this.rectTest),
-      this.preload();
+    (this.pixiStage = new I()), (this.pixi_renderer = r), (this.rectTest = new le().rect(0, 0, this.settings.width, this.settings.height)), this.rectTest.fill(0), (this.rectTest.alpha = 0), this.pixiStage.addChild(this.rectTest), this.preload();
   }
   preload() {
     this.wall_gap;
     let r = [];
-    r.push({ alias: "logo0", src: me }),
-      r.push({ alias: "logo1", src: xe }),
-      r.push({ alias: "logo2", src: fe }),
-      r.push({ alias: "logo3", src: Ce }),
-      r.push({ alias: "logo4", src: we }),
-      r.push({ alias: "logo5", src: ve }),
-      r.push({ alias: "logo6", src: ye }),
-      r.push({ alias: "logo7", src: be }),
-      r.push({ alias: "logo8", src: Se }),
-      r.push({ alias: "logo9", src: ke }),
-      r.push({ alias: "logo_live0", src: et }),
-      r.push({ alias: "logo_live1", src: tt }),
-      r.push({ alias: "logo_live2", src: rt }),
-      r.push({ alias: "logo_live3", src: _t }),
-      r.push({ alias: "logo_live4", src: Wt }),
-      r.push({ alias: "logo_live5", src: it }),
-      r.push({ alias: "logo_live6", src: st }),
-      r.push({ alias: "logo_live7", src: ot }),
-      r.push({ alias: "logo5_dark", src: Dt }),
-      r.push({ alias: "circle", src: Fe });
+    r.push({ alias: "logo0", src: me }), r.push({ alias: "logo1", src: xe }), r.push({ alias: "logo2", src: fe }), r.push({ alias: "logo3", src: Ce }), r.push({ alias: "logo4", src: we }), r.push({ alias: "logo5", src: ve }), r.push({ alias: "logo6", src: ye }), r.push({ alias: "logo7", src: be }), r.push({ alias: "logo8", src: Se }), r.push({ alias: "logo9", src: ke }), r.push({ alias: "logo_live0", src: et }), r.push({ alias: "logo_live1", src: tt }), r.push({ alias: "logo_live2", src: rt }), r.push({ alias: "logo_live3", src: _t }), r.push({ alias: "logo_live4", src: Wt }), r.push({ alias: "logo_live5", src: it }), r.push({ alias: "logo_live6", src: st }), r.push({ alias: "logo_live7", src: ot }), r.push({ alias: "logo5_dark", src: Dt }), r.push({ alias: "circle", src: Fe });
     for (let i = 0; i < r.length; i++) {
       let { alias: s, src: l } = r[i];
       J.cache.has(s) || J.add({ alias: s, src: l });
@@ -633,22 +406,7 @@ class Vt {
     });
   }
   start() {
-    (this.con_logoFix = this.createLogoWallFix()),
-      (this.arr_conlogo = []),
-      (this.con_logo0 = this.createLogoWall()),
-      this.arr_conlogo.push(this.con_logo0),
-      this.createCircle(),
-      this.showIn(),
-      (this.edgeTexture = this.createGraidentEdgeTexture()),
-      (this.leftEdge = new R(this.edgeTexture)),
-      this.pixiStage.addChild(this.leftEdge),
-      (this.rightEdge = new R(this.edgeTexture)),
-      (this.rightEdge.scale.x = -1),
-      this.pixiStage.addChild(this.rightEdge),
-      this.updateProps(this.location),
-      window.addEventListener("resize", this.onWindowResize.bind(this), !1),
-      window.requestAnimationFrame(this._animate.bind(this)),
-      this._resize();
+    (this.con_logoFix = this.createLogoWallFix()), (this.arr_conlogo = []), (this.con_logo0 = this.createLogoWall()), this.arr_conlogo.push(this.con_logo0), this.createCircle(), this.showIn(), (this.edgeTexture = this.createGraidentEdgeTexture()), (this.leftEdge = new R(this.edgeTexture)), this.pixiStage.addChild(this.leftEdge), (this.rightEdge = new R(this.edgeTexture)), (this.rightEdge.scale.x = -1), this.pixiStage.addChild(this.rightEdge), this.updateProps(this.location), window.addEventListener("resize", this.onWindowResize.bind(this), !1), window.requestAnimationFrame(this._animate.bind(this)), this._resize();
   }
   createGraidentEdgeTexture() {
     const r = document.createElement("canvas"),
@@ -656,55 +414,22 @@ class Vt {
       s = 400,
       l = 200,
       d = i.createLinearGradient(0, 0, s, 0);
-    return (
-      d.addColorStop(0, "rgba(238,238,238,1)"),
-      d.addColorStop(0.3, "rgba(238,238,238,0)"),
-      (i.fillStyle = d),
-      i.fillRect(0, 0, s, l),
-      $e.from(r)
-    );
+    return d.addColorStop(0, "rgba(238,238,238,1)"), d.addColorStop(0.3, "rgba(238,238,238,0)"), (i.fillStyle = d), i.fillRect(0, 0, s, l), $e.from(r);
   }
   updateProps(r) {
-    (this.location = r),
-      this.location.pathname.includes("/app/opml")
-        ? (this.con_logo0 && (this.con_logo0.visible = !1),
-          this.con_logoFix && (this.con_logoFix.visible = !0),
-          this.leftEdge && (this.leftEdge.visible = !1),
-          this.rightEdge && (this.rightEdge.visible = !1),
-          (this.maxWidth = 1280),
-          this._resize())
-        : (this.con_logo0 && (this.con_logo0.visible = !0),
-          this.con_logoFix && (this.con_logoFix.visible = !1),
-          this.leftEdge && (this.leftEdge.visible = !0),
-          this.rightEdge && (this.rightEdge.visible = !0),
-          (this.maxWidth = 1920),
-          this._resize());
+    (this.location = r), this.location.pathname.includes("/app/opml") ? (this.con_logo0 && (this.con_logo0.visible = !1), this.con_logoFix && (this.con_logoFix.visible = !0), this.leftEdge && (this.leftEdge.visible = !1), this.rightEdge && (this.rightEdge.visible = !1), (this.maxWidth = 1280), this._resize()) : (this.con_logo0 && (this.con_logo0.visible = !0), this.con_logoFix && (this.con_logoFix.visible = !1), this.leftEdge && (this.leftEdge.visible = !0), this.rightEdge && (this.rightEdge.visible = !0), (this.maxWidth = 1920), this._resize());
   }
   createLogoWallFix() {
     let r = new I();
     this.pixiStage.addChild(r), (this.arr_fixed = []);
-    const i = [
-      "logo_live0",
-      "logo_live1",
-      "logo_live2",
-      "logo_live3",
-      "logo_live4",
-      "logo_live5",
-      "logo_live6",
-      "logo_live7",
-    ];
+    const i = ["logo_live0", "logo_live1", "logo_live2", "logo_live3", "logo_live4", "logo_live5", "logo_live6", "logo_live7"];
     this.wall_spw * 0.3;
     let s = this.wall_gap * 0.85;
     for (let l = 0; l < i.length; l++) {
       let d = new I(),
         h = this.resources[i[l]];
       const g = new R(h);
-      this.resizeSpriteH(g, 55),
-        (d.x = 50 + g.width / 2 + s * l),
-        (d.sp = g),
-        d.addChild(g),
-        r.addChild(d),
-        this.arr_fixed.push(d);
+      this.resizeSpriteH(g, 55), (d.x = 50 + g.width / 2 + s * l), (d.sp = g), d.addChild(g), r.addChild(d), this.arr_fixed.push(d);
     }
     return r;
   }
@@ -724,13 +449,10 @@ class Vt {
       const p = new R(f);
       p.anchor.set(0.5, 0.5),
         (a.interactive = !0),
-        g % s == 5 &&
-          ((p.drakTexture = !0),
-          (p.texture = this.resources["logo" + (g % s) + "_dark"])),
+        g % s == 5 && ((p.drakTexture = !0), (p.texture = this.resources["logo" + (g % s) + "_dark"])),
         (a.tint = 0),
         a.on("pointerover", () => {
-          y.TweenMax.killTweensOf(p.mask.scale),
-            y.TweenMax.killTweensOf(a.scale);
+          y.TweenMax.killTweensOf(p.mask.scale), y.TweenMax.killTweensOf(a.scale);
           let w = a.orginS * 1.3;
           y.TweenMax.to(a, 0, { tint: 16777215 }),
             y.TweenMax.to(a.scale, 0.7, { x: w, y: w, ease: Back.easeOut }),
@@ -739,20 +461,12 @@ class Vt {
               y: 1.5,
               ease: Back.easeOut,
             }),
-            p.drakTexture &&
-              ((p.texture = this.resources["logo" + (g % s)]),
-              this.resizeSprite(p, l));
+            p.drakTexture && ((p.texture = this.resources["logo" + (g % s)]), this.resizeSprite(p, l));
         }),
         a.on("pointerout", () => {
-          y.TweenMax.killTweensOf(p.mask.scale),
-            y.TweenMax.killTweensOf(a.scale);
+          y.TweenMax.killTweensOf(p.mask.scale), y.TweenMax.killTweensOf(a.scale);
           let w = a.orginS * 1;
-          y.TweenMax.to(a, 0, { tint: 0 }),
-            y.TweenMax.to(a.scale, 0.3, { x: w, y: w, ease: Back.easeOut }),
-            y.TweenMax.to(p.mask.scale, 0.3, { x: 1, y: 1 }),
-            p.drakTexture &&
-              ((p.texture = this.resources["logo" + (g % s) + "_dark"]),
-              this.resizeSprite(p, l));
+          y.TweenMax.to(a, 0, { tint: 0 }), y.TweenMax.to(a.scale, 0.3, { x: w, y: w, ease: Back.easeOut }), y.TweenMax.to(p.mask.scale, 0.3, { x: 1, y: 1 }), p.drakTexture && ((p.texture = this.resources["logo" + (g % s) + "_dark"]), this.resizeSprite(p, l));
         }),
         this.resizeSprite(p, l),
         (a.x = 0 + d * g),
@@ -764,9 +478,7 @@ class Vt {
         a.addChild(p),
         h.push(a),
         i.addChild(a);
-      let m = new le()
-        .rect(-0.5 * p.width, -0.5 * p.height, p.width, p.height)
-        .fill(16711680);
+      let m = new le().rect(-0.5 * p.width, -0.5 * p.height, p.width, p.height).fill(16711680);
       a.addChild(m), (m.x = p.x), (m.y = p.y), (p.mask = m);
     }
     return i;
@@ -789,12 +501,7 @@ class Vt {
   }
   createCircle() {
     let r = this.resources.circle;
-    (this.circle = new R(r)),
-      this.circle.anchor.set(0.5, 0.5),
-      (this.circle.x = 0.5 * this.settings.width),
-      (this.circle.orginY = this.circle.y =
-        this.settings.height - this.circle.height / 2),
-      this._resize();
+    (this.circle = new R(r)), this.circle.anchor.set(0.5, 0.5), (this.circle.x = 0.5 * this.settings.width), (this.circle.orginY = this.circle.y = this.settings.height - this.circle.height / 2), this._resize();
   }
   showFix() {}
   showIn() {
@@ -813,15 +520,7 @@ class Vt {
   }
   showOut() {}
   fixSide(r, i, s) {
-    i == "t"
-      ? (r.orginY = r.y = -this.offsetY + r.height / 2 + s)
-      : i == "b"
-      ? (r.orginY = r.y =
-          this.settings.height + this.offsetY - r.height / 2 - s)
-      : i == "l"
-      ? (r.orginX = r.x = r.width / 2 - this.offsetX + s)
-      : i == "r" &&
-        (r.orginX = r.x = this.settings.width - r.width / 2 + this.offsetX - s);
+    i == "t" ? (r.orginY = r.y = -this.offsetY + r.height / 2 + s) : i == "b" ? (r.orginY = r.y = this.settings.height + this.offsetY - r.height / 2 - s) : i == "l" ? (r.orginX = r.x = r.width / 2 - this.offsetX + s) : i == "r" && (r.orginX = r.x = this.settings.width - r.width / 2 + this.offsetX - s);
   }
   onWindowResize() {
     this._resize(),
@@ -831,63 +530,15 @@ class Vt {
   }
   _resize() {
     if (!this.pixi_renderer) return;
-    (this.settings.width = this.parentW =
-      Math.min(this.maxWidth, this.canvas.parentNode.offsetWidth)),
-      (this.settings.height = this.parentH =
-        this.canvas.parentNode.offsetHeight),
-      this.pixi_renderer.resize(this.parentW, this.parentH),
-      (this.canvas.style.height = this.parentH + "px"),
-      (this.canvas.style.width = this.parentW + "px"),
-      (this.pixiStage.scale.x =
-        this.parentH / this.settings.height < this.parentW / this.settings.width
-          ? this.parentH / this.settings.height
-          : this.parentW / this.settings.width),
-      (this.pixiStage.scale.y = this.pixiStage.scale.x),
-      (this.pixiStage.x =
-        (this.parentW - this.settings.width * this.pixiStage.scale.x) * 0.5),
-      (this.pixiStage.y =
-        (this.parentH - this.settings.height * this.pixiStage.scale.y) * 0.5),
-      (this.offsetX = this.pixiStage.x / this.pixiStage.scale.x),
-      (this.offsetY = this.pixiStage.y / this.pixiStage.scale.x);
+    (this.settings.width = this.parentW = Math.min(this.maxWidth, this.canvas.parentNode.offsetWidth)), (this.settings.height = this.parentH = this.canvas.parentNode.offsetHeight), this.pixi_renderer.resize(this.parentW, this.parentH), (this.canvas.style.height = this.parentH + "px"), (this.canvas.style.width = this.parentW + "px"), (this.pixiStage.scale.x = this.parentH / this.settings.height < this.parentW / this.settings.width ? this.parentH / this.settings.height : this.parentW / this.settings.width), (this.pixiStage.scale.y = this.pixiStage.scale.x), (this.pixiStage.x = (this.parentW - this.settings.width * this.pixiStage.scale.x) * 0.5), (this.pixiStage.y = (this.parentH - this.settings.height * this.pixiStage.scale.y) * 0.5), (this.offsetX = this.pixiStage.x / this.pixiStage.scale.x), (this.offsetY = this.pixiStage.y / this.pixiStage.scale.x);
     let r = 1,
       i = 1,
       s = 50;
-    if (
-      (this.canvas.parentNode.offsetWidth < 600
-        ? ((r = 0.5), (i = 0.5), (s = 40), this.resizeGap(400 * 0.6))
-        : this.canvas.parentNode.offsetWidth < 900
-        ? ((r = 0.6), (i = 0.6), (s = 80), this.resizeGap(400 * 0.8))
-        : this.canvas.parentNode.offsetWidth < 1200
-        ? ((r = 0.8), (i = 0.8), (s = 100), this.resizeGap(400 * 0.8))
-        : this.canvas.parentNode.offsetWidth < 1536 &&
-          ((r = 1), (i = 0.9), (s = 120), this.resizeGap(400 * 0.8)),
-      this.rectTest &&
-        ((this.rectTest.width = this.settings.width),
-        (this.rectTest.height = this.settings.height)),
-      this.leftEdge &&
-        ((this.leftEdge.width = this.settings.width * 0.1),
-        (this.leftEdge.height = this.settings.height * 0.75)),
-      this.rightEdge &&
-        ((this.rightEdge.width = this.settings.width * 0.1),
-        (this.rightEdge.height = this.settings.height),
-        (this.rightEdge.x = this.settings.width),
-        (this.rightEdge.y = 0)),
-      this.con_logo0 &&
-        ((this.con_logo0.y = this.settings.height / 2),
-        this.con_logo0.scale.set(r / this.pixiStage.scale.x)),
-      this.con_logoFix)
-    ) {
+    if ((this.canvas.parentNode.offsetWidth < 600 ? ((r = 0.5), (i = 0.5), (s = 40), this.resizeGap(400 * 0.6)) : this.canvas.parentNode.offsetWidth < 900 ? ((r = 0.6), (i = 0.6), (s = 80), this.resizeGap(400 * 0.8)) : this.canvas.parentNode.offsetWidth < 1200 ? ((r = 0.8), (i = 0.8), (s = 100), this.resizeGap(400 * 0.8)) : this.canvas.parentNode.offsetWidth < 1536 && ((r = 1), (i = 0.9), (s = 120), this.resizeGap(400 * 0.8)), this.rectTest && ((this.rectTest.width = this.settings.width), (this.rectTest.height = this.settings.height)), this.leftEdge && ((this.leftEdge.width = this.settings.width * 0.1), (this.leftEdge.height = this.settings.height * 0.75)), this.rightEdge && ((this.rightEdge.width = this.settings.width * 0.1), (this.rightEdge.height = this.settings.height), (this.rightEdge.x = this.settings.width), (this.rightEdge.y = 0)), this.con_logo0 && ((this.con_logo0.y = this.settings.height / 2), this.con_logo0.scale.set(r / this.pixiStage.scale.x)), this.con_logoFix)) {
       this.con_logoFix.y = this.settings.height / 2;
       for (let l = 0; l < this.arr_fixed.length; l++) {
         let d = this.arr_fixed[l];
-        (d.x =
-          s +
-          ((this.parentW - 2 * s) /
-            (this.arr_fixed.length - 1) /
-            this.pixiStage.scale.x) *
-            l),
-          (d.scale.x = i / this.pixiStage.scale.x),
-          (d.scale.y = i / this.pixiStage.scale.x);
+        (d.x = s + ((this.parentW - 2 * s) / (this.arr_fixed.length - 1) / this.pixiStage.scale.x) * l), (d.scale.x = i / this.pixiStage.scale.x), (d.scale.y = i / this.pixiStage.scale.x);
       }
     }
   }
@@ -895,16 +546,12 @@ class Vt {
   _animate() {
     if (this.canvas) {
       let r = this.canvas.getBoundingClientRect().bottom - 300;
-      !this.inView && r < window.innerHeight
-        ? (this.inView = !0)
-        : r > window.innerHeight && (this.inView = !1),
-        this.pixi_renderer.render(this.pixiStage);
+      !this.inView && r < window.innerHeight ? (this.inView = !0) : r > window.innerHeight && (this.inView = !1), this.pixi_renderer.render(this.pixiStage);
     }
     this.animationId = window.requestAnimationFrame(this._animate.bind(this));
   }
   dispose() {
-    window.removeEventListener("resize", this.onWindowResize.bind(this), !1),
-      cancelAnimationFrame(this.animationId);
+    window.removeEventListener("resize", this.onWindowResize.bind(this), !1), cancelAnimationFrame(this.animationId);
   }
 }
 const Nt = (e) => {
@@ -1262,8 +909,7 @@ const Nt = (e) => {
     return (
       n.useEffect(() => {
         const d = e.find((h) => {
-          for (let g = 0; g < h.paths.length; g++)
-            if (r.pathname.includes(h.paths[g])) return h;
+          for (let g = 0; g < h.paths.length; g++) if (r.pathname.includes(h.paths[g])) return h;
         });
         l(d);
       }, [r]),
@@ -1397,12 +1043,7 @@ const Nt = (e) => {
       [l, d] = k.useState({}),
       { SCREEN_SIZE: h } = G();
     n.useEffect(() => {
-      s(r.pathname),
-        r.pathname.includes("app/opml")
-          ? d({ tabs: "TRUSTED BY", title: "SOMETHING BIG IS COMMING SOON..." })
-          : r.pathname.includes("app/points-program")
-          ? d({ tabs: "Onchain AI Oracle Now Live On" })
-          : d({ tabs: "TRUSTED BY" });
+      s(r.pathname), r.pathname.includes("app/opml") ? d({ tabs: "TRUSTED BY", title: "SOMETHING BIG IS COMMING SOON..." }) : r.pathname.includes("app/points-program") ? d({ tabs: "Onchain AI Oracle Now Live On" }) : d({ tabs: "TRUSTED BY" });
     }, [r.pathname]);
     const g = [
         {
@@ -1467,9 +1108,7 @@ const Nt = (e) => {
                     style: {
                       maxWidth: "var(--app-maxWidth)",
                       position: "relative",
-                      padding: h.EXTRA_SMALL
-                        ? "2.5rem 3rem 1rem 3rem"
-                        : "1.5rem 1rem 1rem 1rem",
+                      padding: h.EXTRA_SMALL ? "2.5rem 3rem 1rem 3rem" : "1.5rem 1rem 1rem 1rem",
                       zIndex: 3,
                     },
                     children: t.jsxs(o, {
@@ -1538,12 +1177,8 @@ const Nt = (e) => {
                 alignItems: { xs: "center", sm: "stretch" },
                 position: "relative",
                 zIndex: 3,
-                margin: r.pathname.includes("imo")
-                  ? "0"
-                  : { xs: "0rem 0 0 0", sm: "2rem  0 2.5rem 0" },
-                padding: r.pathname.includes("imo")
-                  ? { xs: "3rem 0 3rem 0 ", sm: "3rem 0 5rem 0 " }
-                  : { xs: "1rem", sm: "0 1rem 2.5rem 1rem" },
+                margin: r.pathname.includes("imo") ? "0" : { xs: "0rem 0 0 0", sm: "2rem  0 2.5rem 0" },
+                padding: r.pathname.includes("imo") ? { xs: "3rem 0 3rem 0 ", sm: "3rem 0 5rem 0 " } : { xs: "1rem", sm: "0 1rem 2.5rem 1rem" },
               },
               style: {
                 backgroundImage: `url(${Fe})`,
@@ -1562,13 +1197,7 @@ const Nt = (e) => {
                   xs: 12,
                   sm: 7,
                   lg: 8,
-                  children:
-                    i === "/imo" ||
-                    i === "/app/imo/olm" ||
-                    i.includes("/app/opml") ||
-                    i.includes("/news")
-                      ? t.jsx(Xt, {})
-                      : t.jsx(Ut, { newsList: a }),
+                  children: i === "/imo" || i === "/app/imo/olm" || i.includes("/app/opml") || i.includes("/news") ? t.jsx(Xt, {}) : t.jsx(Ut, { newsList: a }),
                 }),
                 t.jsx(o, {
                   item: !0,
@@ -1835,19 +1464,9 @@ const Nt = (e) => {
   t0 = "/asset/png/menu_imo-CdSWiDcV.png",
   r0 =
     "data:image/png;base64,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",
-  i0 = Z(
-    t.jsx("path", { d: "M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" }),
-    "Menu"
-  ),
-  s0 =
-    "data:image/svg+xml,%3csvg%20id='Layer_1'%20data-name='Layer%201'%20xmlns='http://www.w3.org/2000/svg'%20width='469.29'%20height='157.71'%20viewBox='0%200%20469.29%20157.71'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%2300f6ff;%20}%20%3c/style%3e%3c/defs%3e%3cg%3e%3cpath%20class='cls-1'%20d='M23.2,134.05A75.78,75.78,0,0,1,0,78.49,75.69,75.69,0,0,1,23.2,23.2,75.54,75.54,0,0,1,78.85,0,75.64,75.64,0,0,1,134.51,23.2,75.78,75.78,0,0,1,157.7,78.86a75.8,75.8,0,0,1-23.19,55.65A75.78,75.78,0,0,1,78.85,157.7,75.7,75.7,0,0,1,23.2,134.05Zm83.48-27.83a37.63,37.63,0,0,0,11.55-27.83,37.61,37.61,0,0,0-11.55-27.83A37.66,37.66,0,0,0,78.85,39,37.58,37.58,0,0,0,51,51,37.6,37.6,0,0,0,39.48,78.86,37.61,37.61,0,0,0,51,106.68a38.21,38.21,0,0,0,55.19-.46Z'/%3e%3cpath%20class='cls-1'%20d='M289.93,23.2a78.38,78.38,0,0,0-111.31,0,75.71,75.71,0,0,0-23.19,55.66h0V157h39.24V78.49a37.63,37.63,0,0,1,11.54-27.83,39,39,0,0,1,55.17-.5l.49.5a37.6,37.6,0,0,1,11.55,27.83h39.24A75.6,75.6,0,0,0,289.93,23.2Z'/%3e%3cpath%20class='cls-1'%20d='M469.1,78.49a75.86,75.86,0,0,0-23.19-55.66A78.48,78.48,0,0,0,335,23.2,75.9,75.9,0,0,0,312.1,78.86,75.93,75.93,0,0,0,335,134.51a75.78,75.78,0,0,0,55.66,23.19V117.77a37.6,37.6,0,0,1-27.83-11.55,37.67,37.67,0,0,1-11.55-27.83,37.65,37.65,0,0,1,11.55-27.83A39,39,0,0,1,418,50.07l.5.49A37.75,37.75,0,0,1,430,78.39V157h39.29V78.49Z'/%3e%3c/g%3e%3c/svg%3e",
-  o0 = ({
-    show: e,
-    onMouseEnter: r,
-    onMouseLeave: i,
-    children: s,
-    data: l,
-  }) => {
+  i0 = Z(t.jsx("path", { d: "M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z" }), "Menu"),
+  s0 = "data:image/svg+xml,%3csvg%20id='Layer_1'%20data-name='Layer%201'%20xmlns='http://www.w3.org/2000/svg'%20width='469.29'%20height='157.71'%20viewBox='0%200%20469.29%20157.71'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%2300f6ff;%20}%20%3c/style%3e%3c/defs%3e%3cg%3e%3cpath%20class='cls-1'%20d='M23.2,134.05A75.78,75.78,0,0,1,0,78.49,75.69,75.69,0,0,1,23.2,23.2,75.54,75.54,0,0,1,78.85,0,75.64,75.64,0,0,1,134.51,23.2,75.78,75.78,0,0,1,157.7,78.86a75.8,75.8,0,0,1-23.19,55.65A75.78,75.78,0,0,1,78.85,157.7,75.7,75.7,0,0,1,23.2,134.05Zm83.48-27.83a37.63,37.63,0,0,0,11.55-27.83,37.61,37.61,0,0,0-11.55-27.83A37.66,37.66,0,0,0,78.85,39,37.58,37.58,0,0,0,51,51,37.6,37.6,0,0,0,39.48,78.86,37.61,37.61,0,0,0,51,106.68a38.21,38.21,0,0,0,55.19-.46Z'/%3e%3cpath%20class='cls-1'%20d='M289.93,23.2a78.38,78.38,0,0,0-111.31,0,75.71,75.71,0,0,0-23.19,55.66h0V157h39.24V78.49a37.63,37.63,0,0,1,11.54-27.83,39,39,0,0,1,55.17-.5l.49.5a37.6,37.6,0,0,1,11.55,27.83h39.24A75.6,75.6,0,0,0,289.93,23.2Z'/%3e%3cpath%20class='cls-1'%20d='M469.1,78.49a75.86,75.86,0,0,0-23.19-55.66A78.48,78.48,0,0,0,335,23.2,75.9,75.9,0,0,0,312.1,78.86,75.93,75.93,0,0,0,335,134.51a75.78,75.78,0,0,0,55.66,23.19V117.77a37.6,37.6,0,0,1-27.83-11.55,37.67,37.67,0,0,1-11.55-27.83,37.65,37.65,0,0,1,11.55-27.83A39,39,0,0,1,418,50.07l.5.49A37.75,37.75,0,0,1,430,78.39V157h39.29V78.49Z'/%3e%3c/g%3e%3c/svg%3e",
+  o0 = ({ show: e, onMouseEnter: r, onMouseLeave: i, children: s, data: l }) => {
     const d = n.useRef(null);
     return t.jsx(o, {
       onMouseEnter: () => {
@@ -2101,9 +1720,7 @@ const Nt = (e) => {
       gap: 2,
       sx: { padding: "1rem" },
       children: [
-        e
-          .filter((r) => r.direction === "left")
-          .map((r, i) => t.jsx(Ae, { item: r, index: i }, i)),
+        e.filter((r) => r.direction === "left").map((r, i) => t.jsx(Ae, { item: r, index: i }, i)),
         t.jsx(o, {
           container: !0,
           xs: "auto",
@@ -2112,9 +1729,7 @@ const Nt = (e) => {
           direction: "column",
           justifyContent: "space-between",
           style: { maxWidth: "20rem" },
-          children: e
-            .filter((r) => r.direction === "right")
-            .map((r, i) => t.jsx(Ae, { item: r, index: i }, i)),
+          children: e.filter((r) => r.direction === "right").map((r, i) => t.jsx(Ae, { item: r, index: i }, i)),
         }),
       ],
     }),
@@ -2210,27 +1825,13 @@ const Nt = (e) => {
     const { SCREEN_SIZE: e } = G(),
       r = te(),
       { status: i, address: s, chain: l, addresses: d } = nt(),
-      {
-        authUrlGetter: h,
-        authLogout: g,
-        authStatusGetter: a,
-        authUrlFetcher: f,
-        setIsUserConnectedWallet: p,
-      } = at(),
+      { authUrlGetter: h, authLogout: g, authStatusGetter: a, authUrlFetcher: f, setIsUserConnectedWallet: p } = at(),
       [m, w] = n.useState(!1),
       [Q, A] = n.useState([]),
       [L, b] = n.useState(null),
-      {
-        resetUserStats: Y,
-        resetPointHistory: M,
-        dashboardStatusGetter: F,
-      } = mt(),
+      { resetUserStats: Y, resetPointHistory: M, dashboardStatusGetter: F } = mt(),
       { resetCompletionStatus: T } = xt(),
-      {
-        resetPoolsWithdrawList: Te,
-        resetPoolsStakedList: He,
-        stakeStatusGetter: re,
-      } = ft(),
+      { resetPoolsWithdrawList: Te, resetPoolsStakedList: He, stakeStatusGetter: re } = ft(),
       j = B(),
       { disconnect: ie } = lt(),
       [Oe, U] = n.useState(!1),
@@ -2261,16 +1862,11 @@ const Nt = (e) => {
       ie(), g();
     };
     n.useEffect(() => {
-      i === "connected" &&
-        ((d && d.length > 1) || ((!d || d.length === 0) && Ne()));
+      i === "connected" && ((d && d.length > 1) || ((!d || d.length === 0) && Ne()));
     }, [d]),
       n.useEffect(() => {
         const c = ct("OraAuth");
-        c &&
-          c.user.walletAddress &&
-          c.user.walletAddress.toLowerCase() !==
-            (s == null ? void 0 : s.toLowerCase()) &&
-          g();
+        c && c.user.walletAddress && c.user.walletAddress.toLowerCase() !== (s == null ? void 0 : s.toLowerCase()) && g();
       }, [i, s]),
       n.useEffect(() => {
         h && (window.location.href = h);
@@ -2279,10 +1875,7 @@ const Nt = (e) => {
         c.stopPropagation(),
           "children" in x
             ? setTimeout(() => {
-                w(!0),
-                  k.isValidElement(x.children) &&
-                    x.children.props.items &&
-                    A(x.children.props.items);
+                w(!0), k.isValidElement(x.children) && x.children.props.items && A(x.children.props.items);
               }, 200)
             : (w(!1), b(null));
       },
@@ -2375,8 +1968,7 @@ const Nt = (e) => {
             color: O(v, E) ? "#00FBFF" : "#eee",
             ":hover": {
               color: O(v, E) ? "#00FBFF" : "#fff",
-              textShadow:
-                "0px 0px 10px rgba(0, 251, 255, 1),0px 0px 15px rgba(0, 251, 255, 1)",
+              textShadow: "0px 0px 10px rgba(0, 251, 255, 1),0px 0px 15px rgba(0, 251, 255, 1)",
             },
           },
           onMouseEnter: (Ue) => {
@@ -2384,12 +1976,7 @@ const Nt = (e) => {
           },
           onMouseLeave: ae,
           onClick: () => {
-            (v === "/app/stake" ||
-              v === "/app/tasks/dashboard" ||
-              v === "/app/tasks") &&
-              i === "connected" &&
-              !a.isLoggedIn &&
-              f();
+            (v === "/app/stake" || v === "/app/tasks/dashboard" || v === "/app/tasks") && i === "connected" && !a.isLoggedIn && f();
           },
           children: t.jsx(
             u,
@@ -2515,9 +2102,7 @@ const Nt = (e) => {
                     xl: 3.8,
                     justifyContent: "flex-end",
                     children:
-                      j.pathname === "/" ||
-                      j.pathname === "/home" ||
-                      j.pathname === "/imo"
+                      j.pathname === "/" || j.pathname === "/home" || j.pathname === "/imo"
                         ? !e.EXTRA_SMALL &&
                           t.jsx(yt, {
                             sx: {
@@ -2530,7 +2115,7 @@ const Nt = (e) => {
                               ":hover": { backgroundColor: "#00FBFFee" },
                             },
                             children: t.jsx(C, {
-                              href: "https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x00000000000000000000000000000000000000(buy)",
+                              href: "https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x727287DBa934D30b68eEcFb00C87da78C805b8eE",
                               target: "_blank",
                               rel: "noopener noreferrer",
                               underline: "none",
@@ -2632,13 +2217,9 @@ const Nt = (e) => {
                       display: "flex",
                       padding: "0",
                       justifyContent: "center",
-                      background: O(c.link, c.activeRoute)
-                        ? "rgba(0, 251, 255, 0.50)"
-                        : "none",
+                      background: O(c.link, c.activeRoute) ? "rgba(0, 251, 255, 0.50)" : "none",
                       ":hover": {
-                        background: O(c.link, c.activeRoute)
-                          ? "rgba(0, 251, 255, 0.50)"
-                          : "none",
+                        background: O(c.link, c.activeRoute) ? "rgba(0, 251, 255, 0.50)" : "none",
                       },
                     },
                     children: t.jsxs(C, {
@@ -2678,8 +2259,7 @@ const Nt = (e) => {
                   style: {
                     width: "90%",
                     margin: "auto",
-                    borderBottom:
-                      x != H.length - 1 ? "1px solid #00FBFF" : "none",
+                    borderBottom: x != H.length - 1 ? "1px solid #00FBFF" : "none",
                   },
                 }),
               ]),
@@ -2745,12 +2325,7 @@ const Nt = (e) => {
                     zIndex: 0,
                     height: "auto",
                     flex: 1,
-                    maxWidth:
-                      e.pathname === "/" ||
-                      e.pathname.includes("/imo") ||
-                      e.pathname.includes("/app/tasks/dashboard")
-                        ? "unset"
-                        : "var(--app-maxWidth)",
+                    maxWidth: e.pathname === "/" || e.pathname.includes("/imo") || e.pathname.includes("/app/tasks/dashboard") ? "unset" : "var(--app-maxWidth)",
                   },
                   children: t.jsx(dt, {}),
                 }),
